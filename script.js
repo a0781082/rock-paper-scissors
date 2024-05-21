@@ -10,7 +10,7 @@ window.onload = function () {
   playerName = prompt("Please enter your name: ");
   let i=0;
   for (i = 0 ; i < 5 ; i++) {
-    winner=playTheGame();
+    winner=playRound();
     switch (winner) {
       case "human":
         humanScore = humanScore + 1;
@@ -21,9 +21,16 @@ window.onload = function () {
     }
     alert("Current score: " + playerName + ": " + humanScore + " : Computer: " + computerScore)
   }
+  if (humanScore > computerScore) {
+    alert("Congratulations " + playerName + " - You Won!")
+  } else if (computerScore > humanScore) {
+    alert("Sorry " + playerName + " - You Lost :-(")
+  } else {
+    alert("You both got the same score - it's a draw!")
+  }
 };
 
-function playTheGame() {
+function playRound() {
   humanChoice = prompt("Rock, Paper or Scissors - " + playerName + "?");
   let s2=validateInput(humanChoice);
   computerChoice = getComputerChoice();
@@ -125,7 +132,6 @@ function getComputerChoice() {
   var seedNum = Math.random();
   var decisionNum = seedNum * 100;
   var generatedChoice = "";
-  console.log("decisionNum: " + decisionNum);
 
   if (decisionNum <= 33.3) {
     generatedChoice = "Rock";
