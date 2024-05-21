@@ -27,7 +27,6 @@ window.onload = async function () {
   paperButton = document.getElementById("paperButton");
   scissorsButton = document.getElementById("scissorsButton");
   let buttonRect = scissorsButton.getBoundingClientRect();
-  /*let buttonRect = document.getElementById("scissorsButton").getBoundingClientRect();*/
   let buttonWidth = buttonRect.width + "px";
   rockButton.style.width = buttonWidth;
   paperButton.style.width = buttonWidth;

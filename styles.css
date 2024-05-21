@@ -66,8 +66,7 @@
     width: 100%;
     background-color: white;
     color: darkblue;
-    /*border: 2px solid darkblue;*/
-    border: none;
+    border: 2px solid darkblue;
     font-size: 24px;
 }
 
@@ -88,19 +87,13 @@
     background-color: white;
     font-size: 24px;
     color: darkblue;
-    border: 0;
 }
 
 .table {
     align-self: center;
-    border: 0;
 }
 
 .table td {
-    border:0;
-}
-
-#roundList {
     border:0;
 }
 
