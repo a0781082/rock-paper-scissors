@@ -3,3 +3,105 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    display: block;
+    padding: 5% ;
+    padding-top: 1%;
+    border: 2px solid darkgreen ;
+    margin: auto;
+    margin-top: 5% ;
+    width: 80%;
+    background-color: dodgerblue;
+    color: aliceblue;
+}
+
+.headers {
+    padding: 2%;
+    align-content: center;
+    text-align: center;
+    font-size: 48px;
+}
+
+.boxes {
+    display:block;
+    width: auto ;
+    height: auto ;
+    align-content: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.gameButtonBox {
+    width: 100%;
+    background-color:lightgreen;
+    border: 2px solid green;
+}
+
+.button {
+    align-content: center;
+    text-align: center;
+    font-weight: bolder;
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid black ;
+    border-radius: 15%;
+    padding: 15px 25px;
+    font-size: 24px;
+    box-shadow: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: darkgreen;
+}
+
+.button:active {
+    background-color: white;
+    color: darkgreen;
+    transform: translateY(4px);
+}
+
+.scoreBox {
+    width: 100%;
+    background-color: white;
+    color: darkblue;
+    border: 2px solid darkblue;
+    font-size: 24px;
+}
+
+.score {
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.scoreTable {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    font-size: 24px;
+    color: darkblue;
+}
+
+.table {
+    align-self: center;
+}
+
+.table td {
+    border:0;
+}
+
+.marquee {
+    color: gold;
+    font-weight: bold;
+    white-space: nowrap;
+    clear: both;
+    float: left;
+    font-size: 48px;
+}

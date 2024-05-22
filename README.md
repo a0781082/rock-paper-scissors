@@ -1,1 +1,1 @@
-Rock, Paper, Scissors game - with prompts - but no UI
+Rock, Paper, Scissors Game - with UI
